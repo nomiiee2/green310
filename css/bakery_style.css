@@ -1,0 +1,103 @@
+/* 유니코드를 html과 통일시킨다. */
+
+@charset="UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 112px;
+    color: #55555;
+    margin-bottom: 20px;
+}
+
+section {
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+
+section p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* 타이틀박스 설정 */
+
+.titleBox {
+    text-align: center;
+    height: 100vh;
+    background-color: aquamarine;
+    background-image: url(../img/bread1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10vh;
+}
+
+.menuBox {
+    height: 100vh;
+    background-image: url(../img/bread2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20vh;
+    padding-left: 15vw;
+}
+
+
+.menuBox ul {
+    margin-left: 50px;
+}
+
+.menuBox li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.menuBox span {
+    width: 150px;
+    display: inline-block;
+}
+
+
+/* 컨텍트 박스 설정 */
+
+.contectBox {
+    height: 100vh;
+    background-image: url(../img/cafe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.contectBox form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contectBox input {width: 200px;
+padding: 10px 20px;
+font-size: 32px;
+border-radius: 5px;
+background-color: #555;
+border: none;
+color: white;}
+
+.contectBox ul {display: flex;
+list-style: none;
+justify-content: center;
+}
+
+
+.contectBox li a {color: #555;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    }
+
+.contectBox li a:hover {opacity: 0.5;}
