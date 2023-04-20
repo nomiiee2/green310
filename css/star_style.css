@@ -25,7 +25,7 @@ a {text-decoration: none;
     align-items: center;
     /* 포지션은 항상 부모가 body임 기준도 body기준 */
     position: fixed;
-    z-index: 999999;
+    z-index: 99999;
     left: 0;
     top: 0;
     }
@@ -64,6 +64,26 @@ justify-content: space-between;}
     left: 150px;}
 
 
+
+
+.drink1 {position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    bottom: 5%;}
+
+
+.drink2 {position: absolute;
+    left: 50%;
+    margin-left: -390px;
+    bottom: 20%;}
+
+
+.drink3 {position: absolute;
+    left: 50%;
+    margin-left: 115px;
+    bottom: 20%;}
+
+
 /* 텍스트박스 설정 */
 
 .txtBox {width: 100%;
@@ -90,7 +110,12 @@ justify-content: space-between;}
 .rewards {width: 100%;
     height: 320px;
     background-color: #1e3932;
-    }
+    position: relative;}
+
+.rwWI {position: absolute;
+    left: 18%;
+    top: 15%;}
+
 
 
 .season {width: 100%;
@@ -98,15 +123,37 @@ justify-content: space-between;}
     background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_spring_promotion_bg.jpg);
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+    position: relative;}
+
+.spring {position: absolute;
+    left: 22%;
+    top: 5%;}
+
+.springTxt {position: absolute;
+    right: 25%;
+    top: 40%;}
+
 
 
 .costa {width: 100%;
-    height: 320px;
+    height: 360px;
     background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2023/230125_pc_reserve_bg.jpg);
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+    position: relative;}
+
+.RCoffe {position: absolute;
+    width: 95%;
+    
+    bottom: 1%;}
+
+.RCoffeTxt {position: relative;
+
+    left: 30%;
+    top: 10%;}
+
 
 .pick {width: 100%;
     height: 800px;

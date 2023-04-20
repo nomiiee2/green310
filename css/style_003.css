@@ -102,11 +102,98 @@ clear: both;}
     padding: 10px;}
 
 
+/* position 예제 */
+
+.box004 {background: aquamarine;
+    display: flex;
+    height: 200px;}
+
+.box004 p {width: 200px;
+    height: 200px;
+    border: 1px solid #000;}
+
+.box004 p:nth-child(1) {position: relative;}
+
+.box004 p:nth-child(2) {position: absolute;
+    left: 200px;
+    top: px;}
+
+.box004 p:nth-child(3) {position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;}
+
+
+.box005 {background-color: aquamarine;
+    height: 500px;
+    margin-top: 20px;
+    position: relative;}
 
 
 
 
+.box005 p:nth-child(1) {width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;}
+
+
+.box005 p:nth-child(2) {position: absolute;
+    width: 200px;
+    height:  200px;
+    background-color: cadetblue;
+    right: 50px;
+    bottom: 50px;}
+
+.box005 p:nth-child(2) span {position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;}
+
+
+.box005 p:nth-child(3) {width: 200px;
+    height:  200px;
+    background-color: lightskyblue;
+    position: fixed;
+    bottom: 0;
+    right: 0;}
+
+/* z-index 속성예제 */
+
+.box006 {width: 400%;
+    height: 400px;
+    background-color: antiquewhite;
+    position: relative;}
+
+
+.box006 p:nth-child(1) {width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    z-index: 5;
+    }
+
+.box006 p:nth-child(2) {width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    z-index: 4;}
 
 
 
+.box006 p:nth-child(3) {width: 200px;
+    height: 200px;
+    background-color: lime;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 4;}
 
+    /* -1은 부모자 뒤로 내려간다. */
