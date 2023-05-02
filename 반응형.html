@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형웹설정</title>
+
+
+
+</head>
+
+<body>
+
+    <h1>반응형웹을 위한 설정</h1>
+
+    <p>
+        반응형웹은 웹페이지 하나로 데스크탑, 태블릿, 스마트폰에 맞게 디자인이 자동으로 반응해서<br>
+        변경되는 웹페이지를 의미함
+    </p>
+
+    <p>
+        <strong>
+            반응형웹페이지는 미디어쿼리를 사용하여 개발함
+        </strong>
+    </p>
+
+    <h2>미디어쿼리란?</h2>
+
+    <p>
+        웹페이지에 표시되는 장치에 @media 라는 스타일시트작업을 통해<br>
+        구간을 설정하고 각 구간별 제시되는 속성값을 사용하게됨을 의미함
+    </p>
+
+    <p>
+        min-width : 숫자px은 최소가로값을 의미하여 지정된 숫자보다<br>
+        가로값이 커지는경우를 나타냄<br>
+        max-width : 숫자px는 최대가로값을 의미하여 지정된 숫자보다<br>
+        가로값이 작아지는 경우를 나타냄<br>
+        <strong>
+            사이구간을 나타낼시 min과 max값사이에 and를 사용
+            <em>and 앞뒤는 띄어쓰기가 필수!</em>
+        </strong>
+    </p>
+
+
+    <ul>
+        <li>
+            모바일구간<br>
+            600px 이하 구간을 모두 다 모바일 구간으로 보고<br>
+            375px 이하는 추가 설정 한다.
+        </li>
+        <li>
+            태블릿구간<br>
+            768px 이하 600px 이상 구간으로 설정하거나<br>
+            601px ~ 1024px 구간으로 설정한다
+        </li>
+        <li>
+            데스크탑구간<br>
+            1025px 이상부터 설정하되 네이버처럼 일정구간이 되었을때는br
+            더이상 크기가 커지지않게 가로값을 지정한다.
+        </li>
+    </ul>
+
+
+    <style>
+        body {background: antiquewhite;}
+
+        
+        
+        @media (max-width:600px){
+        body {background: aqua;}
+        body h1 {font-size: 20px;
+            font-weight: normal;}
+        }
+
+        @media (min-width:601px) and (max-width:700px) {
+            body {background:lightgreen;}
+            body h1 {font-size: 30px;
+            font-weight: bold;}
+        }
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
