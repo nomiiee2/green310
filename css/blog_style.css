@@ -28,12 +28,6 @@ img {border: none;
 body {font-family: '맑은고딕' , 'Apple SD Gothic Neo' , sans-serif;}
 
 
-/* 박스3과 박스4의 가로정렬 */
-
-.boxA {display: flex;}
-
-.box3 {width: 70%;}
-.box4 {width: 30%;}
 
 /* 로고 설정 */
 
@@ -66,9 +60,10 @@ body {font-family: '맑은고딕' , 'Apple SD Gothic Neo' , sans-serif;}
     margin-bottom: 20px;}
 
 
-.story img {max-width: 100%;}
+.story img {max-width: 100%;
+    }
 
-.story p {margin-top: 10px
+.story p {margin-top: 10px;
     margin-bottom: 20px;}
 
 .story h2 {margin-top: 40px;
@@ -135,7 +130,7 @@ body {font-family: '맑은고딕' , 'Apple SD Gothic Neo' , sans-serif;}
 .ralation ul li a {display: block;
     padding: 5px;
     font-size: 14px;}
-.ralation img {max-width: 100%;}
+.ralation img {width: 100%;}
 
 .ralation .txt {}
 
@@ -257,23 +252,78 @@ border-bottom: dotted 2px #ddd;
 .box5 {padding-top: 15px;
     padding-bottom: 15px;}
 
-/* 박스3번과 박스4번의 좌우간격 설정 */
 
-.box3 {padding-right: 50px;
-    box-sizing: border-box;}
 
 
 /* 화면에 크기설정 및 가운데 배치 */
 
-.box1, .boxA, .menu, .copyright {width: 1000px;
-    margin: 0 auto;}
+
+
+/* 박스에 왼쪽 오른쪽 공백확보 */
+.box1, .boxA, .copyright {padding-left: 10px;
+    padding-right: 10px;}
+
+
+/* 미디어커리 구간설정 ///////////////////////////////////////////*/
+
+/* 모바일구간 600px 이하
+    태블릿 이하구간 601~767px 
+    태블릿~데스크탑구간 768px 이상
+    일정구간 사이즈 고정값 구간 1040px */
+
+/* 1. 모바일구간 599px 이하 //////*/
+@media (max-width:599px) {
+    /* CSS설정구간 */
+    /* snsSet 설정 */
+    .snsSet span {text-indent: -9999px;
+        display: inline-block;}
+    
+    /* 관련기사 설정 */
+    .ralation ul li {width: 50%;}
+
+}
 
 
 
+/* 2. 태블릿이하구간 601~767px ///////// */
+@media (min-width:600px) and (max-width:767px){
+    /* CSS설정구간 */
+    
+    /* 박스 4-1과 박스 4-2의 가로정렬 */
+    .box4 {display: flex;}
+    .box4-1 {width: 50%;}
+    .box4-2 {width: 50%;}
+}
+
+
+/* 3. 태블릿~데스크탑구간 768px 이상 ///////// */
+@media (min-width:768px) {
+    /* CSS설정구간 */
+
+
+    /* 박스3과 박스4의 가로정렬 */
+
+.boxA {display: flex;}
+
+.box3 {width: 70%;}
+.box4 {width: 30%;}
+
+/* 박스3번과 박스4번의 좌우간격 설정 */
+
+.box3 {padding-right: 50px;
+    box-sizing: border-box;}
+}
 
 
 
+/* 4. 일정구간 가로값 변동없는 사이즈 고정값 구간 1040px */
 
+@media (min-width:1040px) {
+    .box1, .boxA, .menu, .copyright {width: 1000px;
+        margin: 0 auto;}
+
+
+}
 
 
 
