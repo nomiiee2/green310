@@ -10,6 +10,29 @@
     <!-- <link rel="stylesheet" href="css/grid-guide.css"> -->
     <!-- 외부스타일시트연결 -->
     <link rel="stylesheet" href="css/site_style.css">
+    <!-- 폰트어썸 CDN연결 -->
+    <script src="https://kit.fontawesome.com/85ac904405.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery(제이쿼리) CDN-->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 제이쿼리 스크립트언어 설정 -->
+    <script>
+        $(document).ready(function(){
+
+        // 한줄주석 줄바꿈시 자동으로 해제
+
+        // menuBtn을 cilck 했을 때, menu가 아래로 나타나라.
+        
+        $('.menuBtn').click(function(){
+            $('.menu').slideToggle()
+        })
+
+
+
+        })
+    </script>
+
 
 </head>
 <body>
@@ -23,6 +46,9 @@
         </div>
 
         <div class="box2">
+            <button class="menuBtn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
             <div class="menu">
                 <ul>
                     <li><a href="#">메인</a></li>
@@ -40,9 +66,39 @@
     </div>
 
     <div class="box6">
-        <div class="box6-1">박스6-1</div>
-        <div class="box6-2">박스6-2</div>
-        <div class="box6-3">박스6-3</div>
+        <div class="box6-1">
+            <div class="summary">
+                <a href="#">
+                    <i class="fa fa-database" aria-hidden="true"></i>
+                    <h2>데이터분석 / 해석</h2>
+                    <p>목적에 맞는 다양한 각도로<br>
+                        데이터를 분석 해석합니다.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="box6-2">
+            <div class="summary">
+                <a href="#">
+                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <h2>데이터 시각화</h2>
+                    <p>해석결과는 데이터 시각화해서<br>
+                        활용할수 있게합니다.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="box6-3">
+            <div class="summary">
+                <a href="#">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <h2>24시간 지원</h2>
+                    <p>24시간 대응 팀으로<br>
+                        장애에 신속하게 대응합니다.</p>
+                </a>
+            </div>
+        </div>
+
     </div>
 
     <div class="box4">
@@ -56,10 +112,25 @@
         </div>
 
         <div class="snsSet">
+            <p>최신정보를 여기서도 받아보세요</p>
             <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">instagram</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>Twitter
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>Facebook
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>instagram
+                    </a>
+                </li>
             </ul>
         </div>
 

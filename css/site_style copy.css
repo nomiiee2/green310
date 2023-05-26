@@ -1,0 +1,102 @@
+@charset 'utf-8';
+
+* {margin: 0;
+    padding: 0;}
+
+ul,ol {list-style: none;}
+
+a {color: #000;
+    text-decoration: none;}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+    
+body {
+    font-family: '맑은고딕', 'Apple SD Gothic Neo', sans-serif;
+}
+
+
+.logo img {
+    width: 250px;
+    height: 33px;
+}
+
+
+
+.boxA {display: flex;}
+
+.menu {display: flex;}
+
+.menu li {}
+
+.menu li a {padding: 10px 15px;
+    font-size: 14px;}
+
+
+
+.box3 img {max-width: 100%;
+    height: auto;
+    }
+
+
+    .box4 {
+        display: flex;
+    }
+
+    .box4>div:nth-child(1) {
+        width: 70%;
+    }
+
+    .box4>div:nth-child(2) {
+        width: 30%;
+    }
+
+    .notice {
+        padding-right: 35px;
+        box-sizing: border-box;
+    }
+
+
+
+    .copyrignt {}
+
+.copyrignt p {
+    color: #666;
+    font-size: 14px;}
+
+
+
+/* 768px 이상구간 설정 */
+@media (min-width:768px) {
+
+    /* 박스1과 박스2의 가로정렬 */
+
+    .boxA {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+
+
+/* 1190px 이상일때 //// */
+@media (min-width:1190px) {
+
+    /* 레이아웃의 전체 넓이를 고정하고 가운데에 배치함 */
+
+    .boxA,
+    .box3,
+    .box4,
+    .box6,
+    .copyrignt {
+        width: 1140px;
+        margin: 0 auto;
+    }
+
+
+}
