@@ -1,0 +1,374 @@
+@charset 'utf-8';
+
+
+
+* {margin: 0;
+    padding: 0;}
+
+ul,ol {list-style: none;}
+
+a {text-decoration: none;
+    color: #000;}
+
+img {vertical-align: bottom;}
+
+
+
+/* 레이아웃설정 */
+
+
+header {background-color: #ddd;}
+nav {background-color: #ccc;}
+section {background-color: lime;}
+article:nth-child(1) {background-color: #999;}
+article:nth-child(2) {background-color: #888;}
+article:nth-child(3) {background-color: #777;}
+article:nth-child(4) {background-color: #666;}
+
+
+
+
+/* 헤더설정 */
+
+header {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 0;
+    z-index: 10;}
+header h1 {width: 120px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+header .gnb {display: flex;}
+.gnb li {}
+.gnb li a {display: block;
+    padding: 20px;
+    background-color: #fff;}
+
+
+
+
+
+
+
+
+
+
+/* section설정 */
+
+section {}
+article {width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px;}
+
+/* 첫번째 article */
+article:nth-child(1) {}
+
+article:nth-child(1) .txt {position: absolute;
+    top: 150px;
+    width: 800px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    text-align: center;
+    left: 50%;
+    margin-left: -400px;
+}
+article:nth-child(1)>div {width: 1000px;
+    height: 140px; /* div>img 크기 (img의 부모에게 크기값을 부여) */
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    top: 300px;}
+article:nth-child(1)>div>img {width: 100%;
+    max-width: 100%;}
+
+
+
+
+/* 두번째,세번째,네번째 article 타이설정 */
+
+article h2 {background-color: #fff;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 30px 0;}
+
+article h2 span {display: block;
+    font-size: 30px;
+    font-weight: bold;}
+
+article h2 em {font-style: normal;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;}
+
+
+
+
+
+
+
+/* 두번째 article 설정 */
+article:nth-child(2) {background-image: url(https://picsum.photos/1500/1500/?blur);
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+article:nth-child(2) .listBox {width: 60%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;}
+
+article:nth-child(2) .listBox ul {width: 100%;
+    height: 500px;}
+article:nth-child(2) .listBox ul:after {content: '';
+    display: block;
+    clear: both;}
+
+article:nth-child(2) .listBox li {float: left;
+    width: 50%;}
+article:nth-child(2) .listBox li:nth-child(1) {height: 100%;}
+article:nth-child(2) .listBox li:nth-child(2) {height: 50%;}
+article:nth-child(2) .listBox li:nth-child(3) {height: 50%;}
+
+
+
+
+
+
+
+
+/* 세번째 article 설정 */
+
+article:nth-child(3) .event {text-align: center;
+    padding: 30px 0;}
+article:nth-child(3) .event span {background-color: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 5px;}
+article:nth-child(3) .listBox {width: 60%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;}
+
+article:nth-child(3) .listBox ul {width: 100%;
+    height: 200px;}
+article:nth-child(3) .listBox ul:after {content: '';
+    display: block;
+    clear: both;}
+
+article:nth-child(3) .listBox li {float: left;
+    width: 33.3333%;
+    height: 100%;
+    cursor: pointer;
+    background-image: url(../img/pro001.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    filter: grayscale(100%);}
+/* 
+article:nth-child(3) .listBox li:hover {
+    animation: ani 1s linear infinite alternate;} */
+
+/* css에 position이 없으면 top , left등 위치값 설정이 불가능 transform으로 
+    inline태그 불가능 */
+@keyframes ani {
+    0% {transform: translateY(-10px);}
+    100% {transform: translateY(10px);}
+}
+
+
+article:nth-child(3) .btn {width: 120px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;}
+
+
+/* hidden 설정 */
+.hidden {position: fixed;
+    left: 10%;
+    top: 10%;
+    width: 10%;
+    height: 10%;
+    background-color: red;
+    display: flex;
+    align-items: flex-end;
+    transition: all 2s;
+    overflow: hidden;}
+.hidden:hover {width: 80%;
+    height: 80%;}
+.hidden p {width: 50%;}
+.hidden img {height: 100%;}
+
+
+
+
+
+
+
+
+/* 네번째 article 설정 */
+
+article:nth-child(4) .listBox {width: 60%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;}
+
+article:nth-child(4) .listBox .tab_title {
+
+}
+
+article:nth-child(4) .listBox .tab_title ul {
+    display: flex;
+    width: 100%;
+}
+
+article:nth-child(4) .listBox .tab_title li {
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    background-color: #999;
+}
+
+article:nth-child(4) .listBox .tab_con {
+    width: 100%;
+    height: 450px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    position: relative;}
+
+article:nth-child(4) .listBox .tab_con>div {position: absolute;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;}
+article:nth-child(4) .listBox .tab_con>div.on {opacity: 1;
+    z-index: 2;}
+
+
+
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) ul{
+    width: 100%;
+    height: 100%;}
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) ul:after{content: '';
+    display: block;
+    clear: both;}
+
+    
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) li{
+    float: left;
+    width: 33.3333%;}
+    
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(1) {
+    height: 100%;
+}
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(2) {
+    height: 50%;
+}
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(3) {
+    height: 50%;
+}
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(4) {
+    height: 50%;
+}
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(5) {
+    height: 50%;
+}
+
+
+/* nav설정 */
+
+nav {position: fixed;
+    left: 5%;
+    top: 50%;
+    height: 220px;
+    margin-top: -110px;}
+nav ul {}
+nav li {height: 50px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 팝업설정구간 */
+
+.popUp {position: fixed;
+    left: 20%;
+    top: 20%;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #666;
+    z-index: 999;}
+
+.popUp p {
+    font-size: 50px;
+}
+
+.popUp span {position: absolute;
+    right: -50px;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px #666;
+    cursor: pointer;}
+
+
+
+.mainImg {width: 500px;
+    height: 800px;
+    left: 50%;
+    margin-left: -250px;
+    top: 100px;
+    position: fixed;    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.8s;}
+
+
+.mainImg.on {opacity: 1;
+    z-index: 900;}
+
+.mainImg.hold {position: absolute;  /* relative 가 있으면 안됨 */
+    top: 400px;}
+
+
+
+.mainImg img {width: 100%;}
+
+
+
+
+

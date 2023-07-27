@@ -1,0 +1,154 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+
+
+
+/* header 설정 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section */
+#wrap {}
+
+#wrap section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#wrap section:nth-child(1) {
+    background-color: #ddd;
+}
+
+#wrap section:nth-child(2) {
+    background-color: #ccc;
+}
+
+#wrap section:nth-child(3) {
+    background-color: #bbb;
+}
+
+#wrap section:nth-child(4) {
+    background-color: #aaa;
+}
+
+
+
+
+/* section 1 */
+
+
+
+
+/* section 2 */
+#wrap section:nth-child(2) {
+    height: 65vh;
+}
+
+#wrap section:nth-child(2):after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#wrap section:nth-child(2) article {
+    float: left;
+    width: 50%;
+}
+
+#wrap section:nth-child(2) article:nth-child(1) {
+    height: 100%;
+    background-color: antiquewhite;
+    width: 30%;
+}
+
+#wrap section:nth-child(2) article:nth-child(2) {
+    height: 50%;
+    width: 70%;
+}
+
+#wrap section:nth-child(2) article:nth-child(3) {
+    height: 50%;
+    width: 70%;
+}
+
+
+#wrap section:nth-child(2) article {
+    display: flex;
+}
+
+#wrap section:nth-child(2) article>div {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#wrap section:nth-child(2) article>div img {
+    width: 100%;
+}
+
+#wrap section:nth-child(2) article .imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+/* section 3 */
+#wrap section:nth-child(3) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section 4 */
+
+/* footer */

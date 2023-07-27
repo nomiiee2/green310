@@ -1,0 +1,489 @@
+@charset 'UTF-8';
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+/* 로고설정 */
+h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+h1 span {
+    position: absolute;
+    background-color: #000;
+    display: block;
+    height: 2px;
+    width: 80%;
+    left: 10%;
+    bottom: 20px;
+}
+
+
+/* 네비설정 */
+
+nav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul li {
+    width: 14%;
+}
+
+nav ul li a {
+    display: block;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* hero설정 */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    position: relative;
+}
+
+.hero .half {
+    position: absolute;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .half em {
+    font-style: normal;
+    font-size: 30px;
+}
+
+.hero .half strong {
+    font-size: 80px;
+}
+
+.hero .half span {
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.hero .half p {
+    font-size: 14px;
+    border: 4px solid #000;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+
+/* wrap 설정 (콘텐츠영역) */
+
+#wrap {}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 섹션구간레이아웃설정 */
+section:nth-child(1) {
+    background-color: #ddd;
+}
+
+section:nth-child(2) {
+    background-color: #ccc
+}
+
+section:nth-child(3) {
+    background-color: #bbb;
+}
+
+section:nth-child(4) {
+    background-color: #aaa;
+}
+
+section:nth-child(5) {
+    background-color: #999;
+}
+
+
+
+
+
+
+/* 첫번째section 설정 */
+section:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(1)>p {
+    top: 46%;
+    transform: rotate(90deg);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section:nth-child(1) .left {
+    position: absolute;
+    left: -50px;
+}
+
+section:nth-child(1) .right {
+    position: absolute;
+    right: -50px;
+    transform: rotate(-90deg);
+}
+
+section:nth-child(1) article {
+    width: 620px;
+    height: 80%;
+    background-color: #999;
+    position: relative;
+    overflow: hidden;
+}
+
+section:nth-child(1) article ul {
+    width: 1050px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+section:nth-child(1) article ul li {
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+/* 두번째 section 설정 */
+
+section:nth-child(2) {}
+section:nth-child(2) article {position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    z-index: 1;}
+section:nth-child(2) article:nth-child(1) {background-color: rgba(255, 255, 255, 0.6);
+    left: 0;}
+section:nth-child(2) article:nth-child(2) {background-color: rgba(0, 0, 0, 0.6);
+    right: 0;}
+
+
+section:nth-child(2) article>div {width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 0;
+    /* left: 50%;
+    margin-left: -250px; */}
+
+
+section:nth-child(2) article:nth-child(1)>div {
+    right: 50%;
+    margin-right: -250px;
+}
+
+section:nth-child(2) article:nth-child(2)>div {
+    left: 50%;
+    margin-left: -250px;
+}
+
+
+section:nth-child(2) h2 {position: absolute;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    top: 100px;
+    border-bottom: solid 2px #fff;
+    padding-bottom: 10px;}
+
+section:nth-child(2) article:nth-child(1) h2 {text-align: right;}
+
+
+
+
+
+section:nth-child(2) .line {position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    background-color: #fff;}
+
+section:nth-child(2) .line span {position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 2;
+    display: block;
+    transform: rotate(0deg);
+    animation: ani 2.2s linear infinite;}
+
+@keyframes ani {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+/* 세번째 section 설정 */
+section:nth-child(3) {display: flex;
+    justify-content: center;
+    align-items: center;}
+section:nth-child(3) article {width: 940px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;}
+section:nth-child(3) article ul {background-color: lightpink;
+    width: 1600px;
+    position: absolute;
+    left: 0;
+    }
+section:nth-child(3) article ul li {width: 300px;
+    height: 400px;
+    margin-right: 20px;
+    float: left;
+    background-color: lightgoldenrodyellow;}
+section:nth-child(3) article span {}
+
+
+
+
+
+
+
+
+
+
+/* 네번째 section 설정 */
+section:nth-child(4) {display: flex;
+    justify-content: center;
+    align-items: center;}
+
+section:nth-child(4) h2 {font-size: 80px;
+    letter-spacing: 20px;
+    padding-right: 150px;
+    }
+
+
+section:nth-child(4) article {position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 15%;
+    top: 15%;}
+    
+
+section:nth-child(4) article>div {position: absolute;
+    width: 150px;
+    height: 100px;
+    background-color: #fff;}
+
+
+section:nth-child(4) article>div:nth-child(1) {
+    top: -150px;
+    left: -100px;
+    }
+section:nth-child(4) article>div:nth-child(2) {
+    top: 200px;
+    left: -200px;
+    }
+section:nth-child(4) article>div:nth-child(3) {
+        bottom: -150px;
+        left: -100px;
+    }
+section:nth-child(4) article>div:nth-child(4) {
+    bottom: -100px;
+    right: 200px;
+    }
+section:nth-child(4) article>div:nth-child(5) {
+    top: 200px;
+    right: -100px;
+    }
+section:nth-child(4) article>div:nth-child(6) {
+    top: -100px;
+    right: 200px;
+    }
+
+
+
+
+
+
+
+
+/* 다섯번째 section */
+section:nth-child(5) {}
+section:nth-child(5) article:nth-child(1) {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;} 
+
+section:nth-child(5) article:nth-child(2) {}
+section:nth-child(5) article:nth-child(2) h2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    position: relative;
+    font-size: 50px;
+    letter-spacing: 20px;}
+section:nth-child(5) article:nth-child(2) h2 span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 200px;
+    background-color: #000;
+}
+
+
+
+/* 슬라이드 시 이미지는 큰 사진(img태그)으로 높이값 기준100%
+  overflow: hidden; 사용  */
+
+section:nth-child(5) article>div {width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: lightgreen;}
+section:nth-child(5) article>div ul {width: 100%;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    }
+
+section:nth-child(5) article>div ul:nth-child(1) {
+    left: 0;
+    animation: ani2 50s linear infinite;
+}
+section:nth-child(5) article>div ul:nth-child(2) {
+    left: 100%;
+    animation: ani1 50s linear infinite;
+}
+
+section:nth-child(5) article>div li {
+    border: solid 1px #000;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+section:nth-child(5) article img {width: 100%;
+    height: auto;
+    transform: translateY(-100px);}
+
+
+
+@keyframes ani1 {
+    0% {left: 100%;}
+    50% {left: 0;}
+    100% {left: -100%;}
+}
+
+@keyframes ani2 {
+    0% {left: 0;}
+    50% {left: -100%}
+    50.000001% {left: 100%}
+    100% {left: 0;}
+}
+
+
+/* 마우스 hover시, animation정지 */
+section:nth-child(5) article:hover>div ul:nth-child(1) {
+    animation-play-state: paused;
+} 
+section:nth-child(5) article:hover>div ul:nth-child(2) {
+    animation-play-state: paused;
+} 
+
+
+
+
+
+/* footer 설정 */
+footer {background-color: #000;
+    width: 100%;
+    height: 400px;}
+
+
+
+
+
+
+
+
+
+
+

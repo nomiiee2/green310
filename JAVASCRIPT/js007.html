@@ -210,6 +210,17 @@ list7.style.backgroundColor= 'transparent'
             padding: 10px;
             margin-bottom: 2px;}
         
+            #gnb3 {width: 100px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;}
+
+        #gnb3 li {color: #fff;
+            background-color: blue;
+            padding: 10px;
+            margin-bottom: 2px;}
+        
     </style>
 
 
@@ -241,10 +252,14 @@ list7.style.backgroundColor= 'transparent'
     <script>
         // toggle2의 span를 클릭했을 때, gnb2가 나타나라
 
-        $('#toggle2>span').click(function(){
+        $('#toggle2>span').mouseenter(function(){
             $('#gnb2').slideToggle()
         })
         
+        $('#toggle2>span').mouseleave(function(){
+            $('#gnb2').slideToggle()
+        })
+
     </script>
     
 
